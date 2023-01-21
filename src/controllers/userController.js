@@ -28,14 +28,17 @@ export const postJoin = async (req, res) => {
       password,
       location,
     });
+    req.flash("info", "Registered successfully");
     return res.redirect("/login");
   } catch (error) {
+    req.flash("error", "Input is not valid");
     return res.status(400).render("join", {
       pageTitle,
       errorMessage: error._message,
     });
   }
 };
+
 export const getLogin = (req, res) =>
   res.render("login", { pageTitle: "Login" });
 
@@ -58,6 +61,7 @@ export const postLogin = async (req, res) => {
   }
   req.session.loggedIn = true;
   req.session.user = user;
+  req.flash("info", "Logged in successfully");
   return res.redirect("/");
 };
 
@@ -162,11 +166,13 @@ export const postEdit = async (req, res) => {
     { new: true }
   );
   req.session.user = updatedUser;
+  req.flash("info", "Editted successfully");
   return res.redirect("/users/edit");
 };
 
 export const getChangePassword = (req, res) => {
   if (req.session.user.socialOnly === true) {
+    req.flash("error", "Can't change password");
     return res.redirect("/");
   }
   return res.render("users/change-password", { pageTitle: "Change Password" });

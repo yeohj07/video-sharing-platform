@@ -19,6 +19,7 @@
 @import "./screens/search.scss";
 @import "./screens/profile.scss";
 @import "./screens/edit-profile.scss";
+@import "./screens/upload.scss";
 
 // Defaults
 
@@ -39,4 +40,51 @@ main {
   width: 100%;
   margin: 0 auto;
   margin-top: 50px;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    transform: none;
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+}
+
+.message {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 200px;
+  padding: 10px 20px;
+  border-radius: 10000px;
+  text-align: center;
+  animation-fill-mode: forwards;
+  animation-name: fadeIn, fadeOut;
+  animation-delay: 0s, 3s;
+  animation-duration: 0.3s, 0.5s;
+  animation-timing-function: ease-in, ease-in-out;
+  &.info {
+    background-color: #8dcbe6;
+    color: white;
+  }
+  &.error {
+    background-color: tomato;
+    color: white;
+  }
 }

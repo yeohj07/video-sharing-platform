@@ -2,15 +2,17 @@ import "./db";
 import "./models/Video";
 import express from "express";
 import morgan from "morgan";
-import session from "express-session";
+// import session from "express-session";
 import flash from "express-flash";
-import MongoStore from "connect-mongo";
+// import MongoStore from "connect-mongo";
 import rootRouter from "./routers/rootRouter";
 import videoRouter from "./routers/videoRouter";
 import userRouter from "./routers/userRouter";
 import apiRouter from "./routers/apiRouter";
 import { localsMiddleware } from "./middlewares";
 
+const session = require("express-session");
+const MongoStore = require("connect-mongo").default;
 const app = express();
 const logger = morgan("dev");
 

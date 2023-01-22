@@ -1,8 +1,9 @@
-# video sharing platform</br>
+# Video Sharing Platform</br>
 </br>
 </br>
-![vsp](https://user-images.githubusercontent.com/93759367/213917128-0b1bf6ac-6e2c-4f3b-bae3-ff8669ce770b.png)
 </br>
+</br>
+![vsp](https://user-images.githubusercontent.com/93759367/213917176-3945b3d5-99e2-4145-ab10-17662991cc95.png)
 </br>
 Video Sharing Platform</br>
 </br>

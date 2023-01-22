@@ -12,7 +12,7 @@ import apiRouter from "./routers/apiRouter";
 import { localsMiddleware } from "./middlewares";
 
 const session = require("express-session");
-const MongoStore = require("connect-mongo").default;
+const MongoStore = require("connect-mongo");
 const app = express();
 const logger = morgan("dev");
 

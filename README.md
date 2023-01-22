@@ -1,16 +1,7 @@
-# video sharing platform
-
-/ -> Home
-/join -> Join
-/login -> Login
-/search -> Search
-
-/users/:id -> See user
-/users/logout -> Log out
-/users/edit -> Edit my profile
-/users/delete -> Delete my profile
-
-/videos/:id -> Watch video
-/videos/:id/edit -> Edit video
-/videos/:id/delete -> Delete video
-/videos/upload -> Upload video
+# video sharing platform</br>
+</br>
+</br>
+![vsp](https://user-images.githubusercontent.com/93759367/213917071-757f05c0-2cde-4601-9cba-5a0c5d869660.png)</br>
+</br>
+Video Sharing Platform</br>
+</br>

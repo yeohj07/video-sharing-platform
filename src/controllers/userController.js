@@ -161,7 +161,7 @@ export const postEdit = async (req, res) => {
       avatarUrl: file
         ? isHeroku
           ? file.location
-          : "/" + file.path.replace(/\\/g, "/")
+          : file.path.replace(/\\/g, "/")
         : avatarUrl,
       name,
       email,

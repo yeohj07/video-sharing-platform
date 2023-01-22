@@ -100,12 +100,14 @@ const handleMouseLeave = () => {
   controlsTimeout = setTimeout(hideControls, 3000);
 };
 
+/*
 document.addEventListener("keyup", (event) => {
   if (event.code === "Space") {
     handlePlayClick();
     handleMouseMove();
   }
 });
+*/
 
 const handleEnded = () => {
   playBtnIcon.classList = "fas fa-play";

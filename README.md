@@ -4,7 +4,7 @@
 <img src="README-img/README-img-1.png"></img>
 </br>
 </br>
-*A video sharing site using with my highschool friends* </br>
+A video sharing site using with my highschool friends </br>
 </br>
 Front-end : Pug + SCSS <br/>
 Back-end : NodeJS with Express </br>

@@ -7,8 +7,14 @@
 A video sharing site using with my highschool friends </br>
 </br>
 Front-end : Pug + SCSS <br/>
-Back-end : NodeJS with Express </br>
+Back-end : NodeJS with Express + MongoDB </br>
 Hosting : Heroku + AWS </br>
+</br>
+</br>
+## build & deployment process
+Please refer to the link in the post I wrote.</br>
+</br>
+https://yeohj0710.tistory.com/23</br>
 </br>
 </br>
 </br>

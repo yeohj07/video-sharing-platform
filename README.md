@@ -1,10 +1,9 @@
-# Video Sharing Platform </br>
-</br>
-</br>
-<img src="README-img/README-img-1.png"></img>
-</br>
-</br>
+# Video Sharing Platform
 A video sharing site using with my highschool friends </br>
+</br>
+</br>
+<img src="README-img/README-img-1.png"></img></br>
+</br>
 </br>
 Front-end : Pug + SCSS <br/>
 Back-end : NodeJS with Express + MongoDB </br>

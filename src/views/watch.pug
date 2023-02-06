@@ -24,12 +24,15 @@ block content
         p.video__title=video.title
         div(style="margin-top:-10px; margin-bottom:20px")
             span(style="font-size:12px") 조회수 #{video.meta.views}회
+        details 
+            summary(style="color:gray; margin-bottom:20px") Thumbnail
+            img(src=video.thumbUrl style="width:20%; margin-bottom:20px")
         div(style="display: flex;").video__box
             div
                 a(href=`/users/${video.owner._id}`)
-                    img(src=video.owner.avatarUrl ).video__avatar
+                    div(style=`background-image:url(${video.owner.avatarUrl});background-size:cover;background-position:center;`).video__avatar
             div(style="margin: 15px 20px")
-                div(style="margin-bottom: 5px")
+                div(style="margin-top:5px; margin-bottom: 5px")
                     span.video__owner 
                         a(href=`/users/${video.owner._id}`)=video.owner.name
                 div 
@@ -37,7 +40,7 @@ block content
 
         if String(video.owner._id) === String(loggedInUser._id)
             br
-            a(href=`${video.id}/edit`) 비디오 컨텐츠 수정 &rarr;
+            a(href=`${video.id}/edit`) Update Description &rarr;
             br
             //- a(href=`${video.id}/delete`) Delete Video &rarr;
     if loggedIn
@@ -60,12 +63,6 @@ block content
                     br
                     span(style="font-size:12px")=new Date(video.createdAt).toLocaleDateString("ko-kr", {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'})
                     //- span  ❌
-    
-    div(style="margin-top:100px")
-        span(style="color:gray") Thumbnail
-        br
-        br
-        img(src=video.thumbUrl style="width:20%")
     
 block scripts
     script(src="/static/js/videoPlayer.js")

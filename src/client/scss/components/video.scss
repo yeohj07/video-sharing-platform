@@ -7,20 +7,29 @@
   }
   .video-mixin__data {
     display: flex;
+    width: 100%;
     .video-mixin__avatar {
       margin: 10px 0px;
       height: 45px;
       width: 45px;
       border-radius: 50%;
     }
-    .video-mixin__title {
-      font-size: 18px;
-      display: block;
-      margin-top: 10px;
-    }
-    .video-mixin__meta {
-      margin-top: 5px;
-      font-size: 12px;
+    .video-mixin__box {
+      width: 70%;
+      flex-grow: 1;
+      .video-mixin__title {
+        font-size: 18px;
+        word-break: break-all;
+        display: block;
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .video-mixin__meta {
+        margin-top: 5px;
+        padding-left: 10px;
+        font-size: 12px;
+      }
     }
   }
 }

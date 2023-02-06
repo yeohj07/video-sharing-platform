@@ -3,7 +3,7 @@ mixin video(video)
         div.video-mixin__thumb(style=`background-image:url(${video.thumbUrl});background-size:cover;background-position:center;`)
         div.video-mixin__data
             div.video-mixin__avatar(style=`background-image:url(${video.owner.avatarUrl});background-size:cover;background-position:center;`)
-            div(style="margin:5px 10px")
+            div.video-mixin__box
                 span.video-mixin__title=video.title
                 div.video-mixin__meta
                     span #{video.owner.name} ▪ 

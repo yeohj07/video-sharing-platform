@@ -5,7 +5,8 @@ block content
     div.profile__data
         div.profile__avatar(style=`background-image:url(${user.avatarUrl});background-size:cover;background-position:center;`)
         h3=user.name
-    div.video-grid
+    span.empty__message No videos found (I'll fix it soon.)
+    //-div.video-grid
         each video in user.videos
             +video(video)
         else

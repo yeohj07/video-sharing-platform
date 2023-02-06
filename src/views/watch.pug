@@ -42,6 +42,9 @@ block content
                     span  #{comment.text}
                     span  ❌
     
+    div(style="margin-top:100px")
+        img(src=video.thumbUrl style="width:20%")
+    
 block scripts
     script(src="/static/js/videoPlayer.js")
     if loggedIn

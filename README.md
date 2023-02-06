@@ -1,16 +1,19 @@
-# video sharing platform
-
-/ -> Home
-/join -> Join
-/login -> Login
-/search -> Search
-
-/users/:id -> See user
-/users/logout -> Log out
-/users/edit -> Edit my profile
-/users/delete -> Delete my profile
-
-/videos/:id -> Watch video
-/videos/:id/edit -> Edit video
-/videos/:id/delete -> Delete video
-/videos/upload -> Upload video
+# Video Sharing Platform
+A video sharing site using with my highschool friends </br>
+</br>
+</br>
+<img src="README-img/README-img-1.png"></img></br>
+</br>
+</br>
+Front-end : Pug + SCSS <br/>
+Back-end : NodeJS with Express + MongoDB </br>
+Hosting : Heroku + AWS </br>
+</br>
+</br>
+## build & deployment process
+Please refer to the link in the post I wrote.</br>
+</br>
+https://yeohj0710.tistory.com/23</br>
+</br>
+</br>
+</br>

@@ -1,5 +1,6 @@
 #videoContainer {
-  width: 100%;
+  width: min(80%, 800px);
+  height: min(80%, 800px);
   position: relative;
   video {
     width: 100%;

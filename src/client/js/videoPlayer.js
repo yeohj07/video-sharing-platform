@@ -19,6 +19,8 @@ video.volume = volumeValue;
 
 const handlePlayClick = () => {
   if (video.paused) {
+    const { id } = videoContainer.dataset;
+    fetch(`/api/videos/${id}/view`, { method: "POST" });
     video.play();
   } else {
     video.pause();
@@ -111,8 +113,6 @@ document.addEventListener("keyup", (event) => {
 
 const handleEnded = () => {
   playBtnIcon.classList = "fas fa-play";
-  const { id } = videoContainer.dataset;
-  fetch(`/api/videos/${id}/view`, { method: "POST" });
 };
 
 playBtn.addEventListener("click", handlePlayClick);

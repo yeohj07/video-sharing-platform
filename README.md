@@ -2,7 +2,7 @@
 A video sharing site using with my highschool friends </br>
 </br>
 </br>
-<img src="README-img/README-img-1.png"></img></br>
+<img src="README-img/README-img-2.png"></img></br>
 </br>
 </br>
 Front-end : Pug + SCSS <br/>

@@ -17,9 +17,10 @@ header
                 li 
                     a(href=`/users/${loggedInUser._id}`)
                         if !loggedInUser.avatarUrl
-                            span 😊
+                            i.fas.fa-user.fa-lg
                         else 
-                            img.header__avatar(src=loggedInUser.avatarUrl)
+                            div.header__avatar(style=`background-image:url(${loggedInUser.avatarUrl});background-size:cover;background-position:center;`)
+
             else
                 li 
                     a(href="/login") 로그인

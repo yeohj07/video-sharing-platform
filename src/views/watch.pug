@@ -42,7 +42,7 @@ block content
             //- a(href=`${video.id}/delete`) Delete Video &rarr;
     if loggedIn
         div.video__add-comments
-            form.video__coment-form
+            form.video__coment-form#commentForm
                 textarea(cols="30", rows="5", placeholder="댓글 추가...")
                 button Submit
     else 

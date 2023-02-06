@@ -29,18 +29,20 @@ block content
             img(src=video.thumbUrl style="width:20%; margin-bottom:20px")
         div(style="display: flex;").video__box
             div
-                a(href=`/users/${video.owner._id}`)
+                a(href=`/users/ ${video.owner._id}`)
                     div(style=`background-image:url(${video.owner.avatarUrl});background-size:cover;background-position:center;`).video__avatar
-            div(style="margin: 15px 20px")
+            div(style="margin: 10px 20px")
                 div(style="margin-top:5px; margin-bottom: 5px")
                     span.video__owner 
                         a(href=`/users/${video.owner._id}`)=video.owner.name
-                div 
+                div(style="margin-bottom:10px")
                     span.video__createdAt=new Date(video.createdAt).toLocaleDateString("ko-kr", {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'})
+                div 
+                    span=video.description
 
         if String(video.owner._id) === String(loggedInUser._id)
             br
-            a(href=`${video.id}/edit`) Update Description &rarr;
+            a(href=`${video.id}/edit`) 영상 설명 수정하기 (업로더만 보임) &rarr;
             br
             //- a(href=`${video.id}/delete`) Delete Video &rarr;
     if loggedIn

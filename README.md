@@ -2,7 +2,10 @@
 A video sharing site using with my highschool friends </br>
 </br>
 </br>
+## 2023.02.07 Patched
 <img src="README-img/README-img-2.png"></img></br>
+</br>
+<img src="README-img/README-img-3.png"></img></br>
 </br>
 </br>
 Front-end : Pug + SCSS <br/>

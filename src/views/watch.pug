@@ -1,7 +1,7 @@
 extends base
 
 block content
-    div#videoContainer(data-id=video._id)
+    div#videoContainer(data-id=video._id, style="text-align:center;")
         video(src=video.fileUrl)
         div#videoControls.videoControls
             div.videoControls__play
@@ -44,6 +44,9 @@ block content
                     span  ❌
     
     div(style="margin-top:100px")
+        span(style="color:gray") Thumbnail
+        br
+        br
         img(src=video.thumbUrl style="width:20%")
     
 block scripts

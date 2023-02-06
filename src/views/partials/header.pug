@@ -1,7 +1,7 @@
 header
     a(href="/").header__logo
         i.fab.fa-youtube
-        |  <span style="color:white">GSA Shorts<span>
+        |  <span style="color:white;">GSA Shorts<span>
     nav
         ul 
             li 
@@ -9,11 +9,11 @@ header
                     i.fas.fa-search
             if loggedIn
                 li  
-                    a(href="/videos/upload") Upload Video
+                    a(href="/videos/upload") 업로드
                 li 
-                    a(href="/users/edit") Edit Profile
+                    a(href="/users/edit") 프로필 수정
                 li 
-                    a(href="/users/logout") Log Out
+                    a(href="/users/logout") 로그아웃
                 li 
                     a(href=`/users/${loggedInUser._id}`)
                         if !loggedInUser.avatarUrl
@@ -22,8 +22,8 @@ header
                             img.header__avatar(src=loggedInUser.avatarUrl)
             else
                 li 
-                    a(href="/login") Login
+                    a(href="/login") 로그인
                 li 
-                    a(href="/join").header__btn Join
+                    a(href="/join").header__btn 회원가입
                 
            
